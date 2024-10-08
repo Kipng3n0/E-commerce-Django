@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>E-commerce</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:hsla(0, 0%, 97%, 0.082);">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;" >"In particular, this eCommerce  focuses mainly on dealing with online shopping, and order management. Also, the system displays all the available products. In addition, the system allows managing customer records. Evidently, this project is divided into two categories: Customer, and Admin Panel. In an overview of this web application, a customer can simply register from the client-side. Initially, the website displays all the available products with their respective details. Just like every other eCommerce website, this one has also got a cart system. This allows the customers to add a number of products to their cart before checking out. Speaking of check out, there’s a simple payment form that needs to be completed by the customers. In fact, the customers can view their orders list and track orders after successful payment. Besides, customers can make search queries and update their user profiles." </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>
