@@ -306,15 +306,6 @@ body {
     width: 100%;
   }
 }
-
-/* html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica", sans-serif;
-} */
-
 img {
   max-width: 100%;
 }
@@ -344,7 +335,7 @@ img {
   border-radius: 50px;
   margin: 0 .2em 1em;
   &:hover {
-    background: red;
+  background: red;
   }
 }
 
@@ -377,9 +368,10 @@ img {
   background-image: url("{% static 'images/ecom-banner1.png' %}");
 }
 .slide-4 {
-  background-image: url("{% static 'images/ecom-banner3.jpg' %}");
+  background-image: url("{% static 'images/ecom-banner3.JPG' %}");
+}
 .slide-5{
-  background-image: url("{% static 'images/ecom-woman.png' %}");
+  background-image: url("{% static 'images/woman.png' %}");
 }
   </style>
 
@@ -404,6 +396,8 @@ img {
         <div class="slide slide-3"></div>
       <input id="slide-dot-4" type="radio" name="slides">
         <div class="slide slide-4"></div>
+      <input id ="slide-dot-5" type="radio" name="slides">
+        <div class="slide slide-5"></div>
     </div>
   </div>
 </div>
