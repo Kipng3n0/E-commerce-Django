@@ -462,7 +462,7 @@ img {
 {% if messages %}
 <script>
     {% for message in messages %}
-    alert('{{ message }}');
+    alert("{{ message|escapejs }}");
     {% endfor %}
 </script>
 {% endif %}
